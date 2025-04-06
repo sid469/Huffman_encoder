@@ -34,14 +34,19 @@ one row of the frequency table per line.
 Sample Input:
 ------------
 BuildFrequencyTable
+
 ohelloo
+
 Quit
 
 Sample Output:
 --------------
 e 1
+
 h 1
+
 l 2
+
 o 3
 
 
@@ -58,11 +63,17 @@ Command 2: BuildTreeFromFrequencyTable
 Sample Input:
 -------------
 BuildTreeFromFrequencyTable
+
 4
+
 e 1
+
 h 1
+
 l 2
+
 o 3
+
 Quit
 
 Sample Output:
@@ -84,11 +95,17 @@ prefix code.
 Sample Input:
 -------------
 DeriveHuffmanTree
+
 4
+
 e 110
+
 h 111
+
 l 10
+
 o 0
+
 Quit
 
 Sample Output:
@@ -109,8 +126,11 @@ Command 4: DecodeMessage
 Sample Input:
 ------------
 DecodeMessage
+
 (o,(l,(e,h)));
+
 0111110101000
+
 Quit
 
 Sample Output:
