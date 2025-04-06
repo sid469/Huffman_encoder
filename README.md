@@ -24,8 +24,10 @@ The above binary tree based encoding yields a prefix code, and the prefix code w
 Command 1: BuildFrequencyTable
 -------------------------------
 • Description: Construct a frequency table from an input string.
+
 • Input:
       - A single string containing the text/message.
+
 • Output: Each character and its frequency, space-separated, in lexicographical order, with
 one row of the frequency table per line.
 
@@ -45,10 +47,12 @@ o 3
 
 Command 2: BuildTreeFromFrequencyTable
 ---------------------------------------
-• Description: Construct a Huffman Tree from a frequency table.\n
+• Description: Construct a Huffman Tree from a frequency table.
+
 • Input:
       – Integer C, the number of rows in the frequency table.
       – Next C lines: Each line contains a character and its frequency, space-separated.
+      
 • Output: Print the constructed Huffman Tree in Newick format as a single line.
 
 Sample Input:
@@ -70,9 +74,11 @@ Command 3: DeriveHuffmanTree
 -----------------------------
 • Description: Constructs a binary (Huffman) Tree consistent with a given codebook of a
 prefix code.
+
 • Input:
       – Integer C, the number of rows in the codebook of a prefix code.
       – Next C lines: Each line contains a character and its codeword, space-separated.
+
 • Output: Newick-formatted binary (Huffman) tree reconstructed from the codebook.
 
 Sample Input:
@@ -90,12 +96,14 @@ Sample Output:
 (o,(l,(e,h)));
 
 
-Command 2b: DecodeMessage
+Command 4: DecodeMessage
 -------------------------
 • Description: Decode a given binary message using a Huffman Tree, producing the original message string.
+
 • Input:
       – A single string representing the Newick-formatted Huffman Tree.
       – Next line: A binary string representing the encoded message to be decoded.
+
 • Output: Outputs the decoded message as a string in a single line.
 
 Sample Input:
