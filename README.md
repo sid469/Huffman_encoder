@@ -8,7 +8,7 @@ Our goal is to write C++ classes/functions that implement Huffman Coding tasks l
 Huffman code is a prefix code
 
 -------------------------------------------------------------------------------
-Background: Huffman (Tree Construction) Algorithm, Optimal Prefix Code, and Tie-Breaking Rule
+Background: Huffman (Tree Construction) Algorithm and Optimal Prefix Code
 -------------------------------------------------------------------------------
 A binary tree with all C characters at its leaves can be used to derive a (prefix code’s) codebook as follows. The codeword of each character ci at a leaf is found by starting from the root, and recording the path to the leaf, using a 0 for indicating a left branch and 1 for a right branch. Please see figure below for illustration. The cost of the code is given by summation of di*fi over all codewords , where di is the depth of the leaf with character ci in the binary tree (i.e., length of the codeword for ci ) and fi is the number of occurrences (frequency) of ci in the input text.
 
