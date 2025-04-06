@@ -45,7 +45,7 @@ o 3
 
 Command 2: BuildTreeFromFrequencyTable
 ---------------------------------------
-• Description: Construct a Huffman Tree from a frequency table.
+• Description: Construct a Huffman Tree from a frequency table.\n
 • Input:
       – Integer C, the number of rows in the frequency table.
       – Next C lines: Each line contains a character and its frequency, space-separated.
