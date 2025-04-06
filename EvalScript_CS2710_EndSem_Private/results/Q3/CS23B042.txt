@@ -1,0 +1,14 @@
+Evaluating Q3 for CS23B042
+Test test1: FAIL
+Test test10: FAIL
+Test test11: FAIL
+Test test12: FAIL
+Test test2: FAIL
+Test test3: FAIL
+Test test4: FAIL
+Test test5: FAIL
+Test test6: FAIL
+Test test7: FAIL
+Test test8: FAIL
+Test test9: FAIL
+Total Score for Q3: 0/12

@@ -1,0 +1,14 @@
+Evaluating Q2 for CS23B042
+Test test1: PASS
+Test test10: PASS
+Test test11: PASS
+Test test12: PASS
+Test test2: PASS
+Test test3: PASS
+Test test4: PASS
+Test test5: PASS
+Test test6: PASS
+Test test7: PASS
+Test test8: PASS
+Test test9: PASS
+Total Score for Q2: 12/12

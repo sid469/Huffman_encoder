@@ -1,0 +1,45 @@
+stack<node*>q;
+            int t=0;
+            for(int i=0;i<n;i++){
+                char c;
+                cin>>c;
+                int f;
+                cin>>f;
+                node*cur=new node(f,c,NULL,NULL,t);t++;
+                if(q.empty()){q.push(cur);root=q.top();continue;}
+                node*upar=q.top();
+                q.pop();
+                cmp cm;
+                if(cm(upar,cur)){
+                    q.push(new node(f+upar->getFreq(),'~',cur,upar,t));t++;
+                }else {
+                    int o=0;
+                    node*one=NULL;node*two=NULL;
+                    while(!q.empty()&&q.top()<cur){
+                        upar=q.top();
+                        two=one;
+                        one=q.top();
+                        o=1-o;
+                        q.pop();
+                        if(o==0&&two!=NULL){
+                            q.push(new node(one->getFreq()+two->getFreq(),'~',two,one,t));t++;
+                        }
+                    }if(cm(cur,upar)){
+                        q.push(new node(f+upar->getFreq(),'~',upar,cur,t));t++;
+                    }else {
+                        q.push(new node(f+upar->getFreq(),'~',cur,upar,t));t++;
+                    }
+                }root=q.top();
+            }
+            int o=0;
+            node*one=NULL;node*two=NULL;
+            while(!q.empty()){
+                two=one;
+                one=q.top();
+                o=1-o;
+                q.pop();
+                if(q.empty())break;
+                if(o==0&&two!=NULL){
+                    q.push(new node(one->getFreq()+two->getFreq(),'~',two,one,0));
+                }root=q.top();
+            }print_tree();
